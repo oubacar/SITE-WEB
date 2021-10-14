@@ -1,0 +1,134 @@
+<?php
+$bdd = new PDO('Apache:host-2=192.168.43.191;dbname=Sylla;dbhost=Boubacar', $username = Boubacar, $password = guinee224, 'root', '');
+
+if(isset($_POST['forminscription']))
+    echo"ok";
+
+?>
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourratoul_ouyouni</title>
+<body>
+    <div align=center>
+    <h3>INSCRIPTION</h3>
+    <br /><br />
+         <form method="post" action="">
+            <table>
+
+                                         <!-- NOM -->
+
+               <tr>
+                 <td  align="right">
+                     <label for="nom">Nom: </label>
+                 </td>
+                       <td>
+                        <input type="text" placeholder="Votre nom ici" name="nom" id="nom" name="nom">
+                       </td>
+               </tr>
+
+                                         <!-- PRENOM -->
+
+                                         <tr>
+                                            <td  align="right">
+                                                <label for="prenom">Prenom: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="text" placeholder="Votre prenom ici" prenom="prenom" id="prenom" name="prenom">
+                                                  </td>
+                                          </tr>
+
+
+                                        
+                                         <!-- DATE DE NAISSANCE -->
+
+                                         <tr>
+                                            <td  align="right">
+                                                <label for="prenom">Date de naissance: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="text" placeholder="Votre date de naissance ici" prenom="aate de naissance" id="date de naissance" name="date de naissance">
+                                                  </td>
+                                          </tr>
+
+
+                                         <!-- PAYS -->
+
+                                         <tr>
+                                            <td align="right">
+                                                <label for="pays">Pays: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="text" placeholder="Votre pays ici" name="pays" id="pays" name="pays">
+                                                  </td>
+                                          </tr>
+
+                                         <!-- VILLE -->
+
+                                         <tr>
+                                            <td align="right">
+                                                <label for="ville">Ville: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="text" placeholder="Votre ville ici" name="ville" id="ville" name="ville">
+                                                  </td>
+                                          </tr>
+
+                                         <!-- MAIL -->
+
+                                         <tr>
+                                            <td align="right">
+                                                <label for="Mail">Mail: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="email" placeholder="Votre mail ici" name="ville" id="Mail" name="Mail">
+                                                  </td>
+                                          </tr>
+                                          <!-- CONFIRMATION MAIL -->
+
+                                         <tr>
+                                            <td align="right">
+                                                <label for="Mail2">Confirmer votre mail: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="email" placeholder="Votre confirmation ici" name="mail2" id="Mail2" name="Mail2">
+                                                  </td>
+                                          </tr>
+
+                                         <!-- MOT DE PASSE -->
+
+                                         <tr>
+                                            <td align="right">
+                                                <label for="motdepasse">Mot de passe: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="password" placeholder="Votre mot de passe ici" name="nom" id="motdepasse" name="motdepasse">
+                                                  </td>
+                                          </tr>
+                                          <!-- CONFIRMATION DU MOT DE PASSE -->
+
+                                         <tr>
+                                            <td align="right">
+                                                <label for="motdepasse2">Confirmer votre mot de passe: </label>
+                                            </td>
+                                                  <td>
+                                                   <input type="password" placeholder="Votre confirmation ici" name="motdepasse2" id="motdepasse2" name="motdepasse
+                                                   ">
+                                                  </td>
+                                          </tr>
+
+            </table>
+            <tr>
+                <td></td>
+                <br><br>
+                    <td align="center">
+                        <input type="submit" name="forminscription" value="INSCRIPTION">
+                    </td>
+            </tr>
+         </form>
+</body>
+</html>
